@@ -1,0 +1,403 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #444;
+}
+
+h1 h2 h3 h4 h5 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h4 {
+  font-size: 26px;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 20px;
+
+}
+
+.top-strip {
+  border-top: 10px solid #222;
+  z-index: 9;
+  position: fixed;
+  width: 100%;
+  margin-top: -70px;
+}
+
+
+/*search container*/
+
+.browse-area {
+  width: 300px;
+  border-radius: 4px;
+  padding: 30px;
+  display: inline-block;
+  background-color: #333;
+  position: fixed;
+  box-shadow: 0px 4px 7px 0px #222;
+  z-index: 12;
+  margin-left: 74px;
+  margin-top: -70px;
+}
+
+
+.magnify {
+  width: 70px;
+  height: 70px;
+  background-color: #333;
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  position: fixed;
+  box-shadow: 0px 3px 5px 0px #222;
+  margin-top: -70px;
+  z-index: 10;
+}
+
+.magnify i{
+  font-size: 24px;
+  color: #fff;
+  display: block;
+  text-align: center;
+  margin-top: 26px
+}
+
+.close {
+  width: 24px;
+  height: 24px;
+  border-radius: 99px;
+  border: #999 solid 2px;
+  margin-top: -53px;
+  float: right;
+  cursor: pointer;
+
+}
+.close i{
+  font-size: 14px;
+  color: #999;
+  display: block;
+  text-align: center;
+  margin-top: 4px;
+}
+
+.chzn-container-single {
+  margin-bottom: 10px;
+}
+
+.chzn-search {
+  display: none;
+}
+
+.chzn-container {
+  font-weight: 300;
+}
+
+
+.submit-button {
+  background-color: #FCFCFC;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 300;
+  border-radius: 5px;
+  padding: 8px 10px;
+  box-shadow: inset 0 3px 3px #888;
+  color: #555;
+  border: 0;
+  margin-top: 28px;
+  
+}
+
+
+/*header information*/
+
+.masthead {
+  /*background: #ebeced; /* Old browsers */
+  background: #254a5d; /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  #254a5d 4%, #18323f 73%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(4%,#254a5d), color-stop(73%,#18323f)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg,  #254a5d 4%,#18323f 73%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg,  #254a5d 4%,#18323f 73%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg,  #254a5d 4%,#18323f 73%); /* IE10+ */
+  background: linear-gradient(135deg,  #254a5d 4%,#18323f 73%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#254a5d', endColorstr='#18323f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  width: 100%;
+  margin: 0;
+/*  background-color: none;
+*/
+  padding-top: 70px;
+  padding-bottom: 50px;
+  
+}
+
+.wrapper {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.seven-oaks-logo {
+  font-size: 75px;
+  color:  #C5FABC;
+  text-align: center;
+  font-family: 'Lily Script One', cursive;
+  padding-top: 50px;
+}
+
+.introduction {
+  font-size: 26px;
+  line-height: 36px;
+  color: #507b97;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+
+/*main photo area on first page*/
+
+.main-photo {
+  position:relative;
+  height:450px;
+  width:940px;
+  margin:0 auto;
+}
+
+
+
+/*search content*/
+.redbkgd {
+  width: 100%;
+  border-top: 4px solid #fff;
+
+  background: #ff3019; /* Old browsers */
+  background: -moz-linear-gradient(top, #ff3019 0%, #cf0404 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff3019), color-stop(100%,#cf0404)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ff3019 0%,#cf0404 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #ff3019 0%,#cf0404 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #ff3019 0%,#cf0404 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #ff3019 0%,#cf0404 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', endColorstr='#cf0404',GradientType=0 ); /* IE6-9 */
+}
+
+.redwrapper {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+
+
+/*List area*/
+
+
+.middle-bkgd {
+  width: 100%;
+  border-top: 4px solid #fff;
+  background-image: image_url('p4.jpg');
+  background-repeat: repeat;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+}
+
+.middle-wrap {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  border: 7px solid #fff;
+}
+
+.middle-wrap img  {
+  padding-bottom: 10px;
+}
+
+.middle-wrap li {
+  font-size: 15px;
+  color: #777;
+  font-weight: 300;
+  margin-top: 50px;
+  vertical-align: top;
+  padding-right: 12px;
+  border-bottom: 1px solid #444;
+  float: left;
+  padding-bottom: 20px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.middle-wrap a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;  
+
+}
+
+li:last-child  {
+  padding-right: 0px;
+}
+
+.listBold {
+  font-weight: 700;
+  width: 210px;
+}
+
+.listLight {
+  font-weight: 300;
+  width: 210px;
+
+}
+
+.listLight span {
+  font-weight: 700;
+
+}
+
+hr {
+  display: block;
+  margin-top: 10px;
+}
+
+
+
+/*single item content*/
+
+.middle-content {
+  width: 300px;
+  float: left;
+  height: 564px;
+  background-color: #C5FABC;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+
+.purchase {
+  background-color: #666;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  height: 27px;
+  padding: 10px 5px 8px 3px;
+  width: 87%;
+  text-align: center;
+  box-shadow: 0px 0px 3px 0px #bab9b8, inset 0px 1px 2px 0px #111;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 20px;
+}
+
+.booth {
+  width: 593px;
+  height: 380px;
+  float: right;
+  border-bottom: 1px solid #444;
+  vertical-align: top;
+
+}
+
+
+.middle-content span {
+  font-weight: 300;
+  text-align: left;
+  line-height: 25px;
+  color: #666;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 110px;
+}
+
+.middle-content p {
+  font-weight: 700;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 80px
+}
+
+.thumbs {
+  float: left;
+  bottom: 0;
+  margin-left: 8px;
+  border: 0px;
+}
+
+.thumbs li {
+  vertical-align: top;
+  padding-right: 12px;
+  float: left;
+  border-bottom: 0px;
+}
+
+.thumbs li:last-child {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.thumbs i{
+  font-size: 20px;
+  color: #444;
+  line-height: 100px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+}
+
+
+
+/*footer content*/
+
+.footer {
+  width: 100%;
+  background-color: #0c1e28;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  border-top: 4px solid #fff;
+  clear: both;
+  position: relative;
+}
+
+.footnotes {
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 30px;
+  text-align: center;
+  color: #999;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.footnotes span {
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 4px;
+}
+
+* {margin:0;padding:0;}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}

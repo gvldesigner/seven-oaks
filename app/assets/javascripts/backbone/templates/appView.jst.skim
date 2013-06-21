@@ -1,0 +1,33 @@
+/ .masthead
+
+/   .top-strip
+
+/   .wrapper
+
+/     .magnify
+/       i.ss-icon search
+
+/     .seven-oaks-logo
+/       | Seven Oaks Station
+
+/     .introduction
+/       | Explore our extensive collection of solid wood furniture
+/       br from around the globe to suite any interior.
+    
+
+
+
+
+/ .middle-wrap
+
+    
+  
+
+/ .footer
+    
+/   .footnotes
+/     | office: 10 canary wharf, london, united kingdom 
+/     | | email: office@redmans.com  
+/     | | tel: 000.000.0000 
+/     | | fax: 000.000.0000
+/     br &#169; 2013 SEVEN OAKS STATION

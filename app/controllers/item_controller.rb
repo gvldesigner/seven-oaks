@@ -10,7 +10,7 @@ class ItemController < ApplicationController
     response = Etsy::Request.get('/listings/active', {
       :tags => params[:tags]
     })
-    render :json => response
+    render :json => JSON.parse(response.body)['results']
   end
 
 end

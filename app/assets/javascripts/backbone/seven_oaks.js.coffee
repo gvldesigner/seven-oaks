@@ -9,3 +9,6 @@ window.SevenOaks =
   Collections: {}
   Routers: {}
   Views: {}
+
+$(document).ready ->
+  furniture = new AppView()

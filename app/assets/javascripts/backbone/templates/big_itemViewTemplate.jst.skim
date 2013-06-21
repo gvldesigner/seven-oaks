@@ -1,0 +1,26 @@
+.middle-content
+  span Vintage 1940s Antique Desk Lorem ipsum dolor sit amet, consectetur adipiscing elit. thei withe amet, consectetur adipiscing elit. thei withe amet, consectetur adipiscing elit thei withei
+  
+  p $300
+  .purchase Purchase
+
+
+.booth
+  img src="http://placehold.it/595x350"
+
+.thumbs
+  ul
+    li
+      i.ss-icon navigateleft
+    li
+      img src="http://placehold.it/100x100"
+    li
+      img src="http://placehold.it/100x100"
+    li
+      img src="http://placehold.it/100x100"
+    li
+      img src="http://placehold.it/100x100"
+    li
+      i.ss-icon navigateright
+  
+.clearfix
