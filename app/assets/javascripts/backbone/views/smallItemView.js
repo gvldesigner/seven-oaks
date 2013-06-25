@@ -15,7 +15,7 @@ SmallItemView = Backbone.View.extend({
 
 
   render: function(){
-    console.log('this.model = ',this.model)
+
     renderedTemplate = smallItemViewTemplate(this.model)
 
     this.$el.html(renderedTemplate);

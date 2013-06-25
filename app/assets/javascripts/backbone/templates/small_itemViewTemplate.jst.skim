@@ -1,10 +1,10 @@
+img.list-item-image src="#{{this.get('Images')[0].url_170x135}}"
 
-img.list-item-image src="images/phoenix-72-work-table.jpg" height="210px"
-- console.log 'THIS.get("title") = ', this.get('title')
-p.listBold
+p.listLight
   | #{{this.attributes.title}}
 p.listLight 
   = this.get("description")
-span 
+p.listBold 
   |$
   = this.get("price")
+

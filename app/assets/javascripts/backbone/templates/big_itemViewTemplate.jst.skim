@@ -6,21 +6,19 @@
 
 
 .booth
-  img src="http://placehold.it/595x350"
+  img src="http://placehold.it/592x350"
 
-.thumbs
-  ul
-    li
-      i.ss-icon navigateleft
-    li
-      img src="http://placehold.it/100x100"
-    li
-      img src="http://placehold.it/100x100"
-    li
-      img src="http://placehold.it/100x100"
-    li
-      img src="http://placehold.it/100x100"
-    li
-      i.ss-icon navigateright
+  .thumbs
+    ul
+      li
+        i.ss-icon navigateleft
+      li
+        img src="http://placehold.it/100x100"
+      li
+        img src="http://placehold.it/100x100"
+      li
+        img src="http://placehold.it/100x100"
+      li
+        i.ss-icon navigateright
   
 .clearfix

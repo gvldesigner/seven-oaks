@@ -19,6 +19,7 @@ BrowseView = Backbone.View.extend({
     $('.browse-area').append(this.el);
 
     this.$el.html(browseViewTemplate() );
+    $(".fancy").chosen();
 
   },
 
@@ -50,12 +51,13 @@ BrowseView = Backbone.View.extend({
         new ListView()
       }
     });
-
+    this.close()
   },
 
   close: function(){
 
     $('.browse-area').hide()
+    $('.browse-area').html('')
   }
 
 
