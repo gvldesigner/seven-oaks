@@ -1,5 +1,11 @@
+// BrowseView allows you to search furniture items, selecting specifics
+
+// Accessed through furnitureMainView
+
+
 BrowseView = Backbone.View.extend({  
 
+  // creating click events to be called as functions
   events: {
 
     'click .submit-button': 'submit',
@@ -19,14 +25,15 @@ BrowseView = Backbone.View.extend({
     $('.browse-area').append(this.el);
 
     this.$el.html(browseViewTemplate() );
+
+    // Chosen is a jQuery plug-in that is used on the browse-area options
     $(".fancy").chosen();
 
   },
 
   submit: function(){
 
-    console.log('hello')
-
+    // once the submit button is clicked the .main-photo div is removed
     $('.main-photo').remove()
 
     // get values of dropdowns
@@ -48,12 +55,15 @@ BrowseView = Backbone.View.extend({
       // reset the collection, btw.
       reset: true,
       success: function(){
+        // instantiated ListView
         new ListView()
       }
     });
+
     this.close()
   },
 
+  // close button hides browse-area and clears the divs contents
   close: function(){
 
     $('.browse-area').hide()

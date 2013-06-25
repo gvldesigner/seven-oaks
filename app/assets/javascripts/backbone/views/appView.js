@@ -1,3 +1,6 @@
+// AppView is the main level view
+
+
 AppView = Backbone.View.extend({
 
   
@@ -7,6 +10,7 @@ AppView = Backbone.View.extend({
 
     browsingFunction = this.browsing;
 
+    // The magnify button is available to click and take you to the browsing area
     $('.magnify').click(browsingFunction);
 
     
@@ -20,7 +24,7 @@ AppView = Backbone.View.extend({
 
     myFurnitureView = new FurnitureMainView()
 
-
+    /*Referencing to underscore templates within this app*/
 
     appViewTemplate = JST['backbone/templates/appView_Template']
 
@@ -37,15 +41,14 @@ AppView = Backbone.View.extend({
 
     this.render()
 
-    console.log ('testing');
-
+    // hiding the browse area until clicked upon
     $('.browse-area').hide()
 
   },
 
 
   render: function(){
-
+    // on rendering the page the main photo div is shown, the view will always remember (this.el)
     $('.main-photo').html(this.el);
 
     myFurnitureView.render();
@@ -55,7 +58,8 @@ AppView = Backbone.View.extend({
 
   browsing: function(){
 
-    console.log('how are you');
+    // when magnify is clicked the browse area will show,
+    // BrowseView is instantiated with 'new'
 
     $('.browse-area').show()
 
