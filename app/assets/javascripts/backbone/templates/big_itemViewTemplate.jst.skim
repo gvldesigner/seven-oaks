@@ -1,25 +1,37 @@
 / Templates are called into the relevant views
 .middle-content
-  span Vintage 1940s Antique Desk Lorem ipsum dolor sit amet, consectetur adipiscing elit. thei withe amet, consectetur adipiscing elit. thei withe amet, consectetur adipiscing elit thei withei
+  span
+    | #{{this.get("description")}}
   
-  p $300
-  .purchase Purchase
+  p
+    | $
+    | #{{this.get("price")}}
+
+    / This yellow information has been retrieved from the console (network)
+    / under XHR click on request and then click on preview
+    / that provides you with the attributes of the item
+  .purchase
+    a href="#{{this.get("url")}}" Purchase 
 
 
 .booth
-  img src="http://placehold.it/592x350"
+  img src="#{{this.get('Images')[0].url_570xN}}"
+  / src="http://placehold.it/592x350"
 
-  .thumbs
-    ul
-      li
-        i.ss-icon navigateleft
-      li
-        img src="http://placehold.it/100x100"
-      li
-        img src="http://placehold.it/100x100"
-      li
-        img src="http://placehold.it/100x100"
-      li
-        i.ss-icon navigateright
+  / .thumbs
+  /   ul
+  /     li
+  /       i.ss-icon navigateleft
+  /     li
+  /       img src="#{{this.get('Images')[2].url_75x75}}"
+  /     li
+  /       img src="#{{this.get('Images')[3].url_75x75}}"
+  /     li
+  /       img src="#{{this.get('Images')[4].url_75x75}}"
+  /       / "http://placehold.it/100x100"
+  /     li
+  /       i.ss-icon navigateright
   
 .clearfix
+
+

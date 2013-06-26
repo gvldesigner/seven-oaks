@@ -32,12 +32,18 @@ BrowseView = Backbone.View.extend({
   },
 
   submit: function(){
-
     // once the submit button is clicked the .main-photo div is removed
-    $('.main-photo').remove()
+    /*$('.main-photo').html('')*/
+
+    $('.middle-wrap').html('');
+
+    console.log('hide the last result')
+
+
+    $('.spinner').show();
+
 
     // get values of dropdowns
-    var vintage = this.$el.find('.vintage').val()
     var wood = this.$el.find('.wood').val()
     var color = this.$el.find('.color').val()
     var type = this.$el.find('.type').val()
@@ -46,7 +52,6 @@ BrowseView = Backbone.View.extend({
     myFurniture.fetch({
       data: {
         tags: [
-          vintage,
           wood,
           color,
           type
@@ -57,7 +62,13 @@ BrowseView = Backbone.View.extend({
       success: function(){
         // instantiated ListView
         new ListView()
-      }
+      },
+
+      error: function() {
+        console.log ('sentence')
+
+            $('.middle-wrap').html('<h5>Your currently selection rendered no items, please try again!</h5>');
+        }
     });
 
     this.close()

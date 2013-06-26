@@ -22,7 +22,7 @@ AppView = Backbone.View.extend({
       {name: 'dresser'}*/
     ])
 
-    myFurnitureView = new FurnitureMainView()
+    mainFurnitureView = new FurnitureMainView()
 
     /*Referencing to underscore templates within this app*/
 
@@ -51,7 +51,7 @@ AppView = Backbone.View.extend({
     // on rendering the page the main photo div is shown, the view will always remember (this.el)
     $('.main-photo').html(this.el);
 
-    myFurnitureView.render();
+    mainFurnitureView.render();
 
   },
 

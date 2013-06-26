@@ -10,7 +10,12 @@ ListView = Backbone.View.extend({
 
   initialize: function(){
 
+    $('.spinner').hide();
+
+    $('.magnify').show();
     // preparing empty div .middle-wrap to accept the listViewTemplate
+    
+
     $('.middle-wrap').append(this.el);
 
     // inserted the listViewTemplate into empty div

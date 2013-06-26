@@ -2,9 +2,7 @@ img.list-item-image src="#{{this.get('Images')[0].url_170x135}}"
 
 p.listLight
   | #{{this.attributes.title}}
-p.listLight 
-  = this.get("description")
 p.listBold 
-  |$
-  = this.get("price")
+  | $
+  | #{{this.get("price")}}
 

@@ -11,7 +11,14 @@ class ItemController < ApplicationController
       :includes => ['Images'],
       :tags => params[:tags]
     )
-    render :json => JSON.parse(response.body)['results']
+
+    result = JSON.parse(response.body)['results']
+
+    if result.inspect != '[]'
+      render :json => result
+    else
+      raise ActionController::RoutingError.new('No Results Found')
+    end
   end
 
 end

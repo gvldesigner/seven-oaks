@@ -1,4 +1,45 @@
-/ img src="/assets/img6o.jpg" width="940" height="450"
-/ http://placehold.it/940x450"
-
+img src="/assets/img83o.jpg" width="940" height="450"
   
+.browse-area-two
+  h4 Start browsing our selection:
+
+  .close-two
+    i.ss-icon delete
+  
+  h6 Wood Type
+  select class="wood fancy" style="width: 300px"
+
+    option value="Walnut" Mahogany
+
+    option value="Birch" Maple
+
+    option value="Teak" Teak
+
+    option value="Maple" Birch
+
+    option value="Oak" Walnut
+    
+  h6 Color
+  select class="color fancy" style="width: 300px"
+      
+    option value="Red" Natural
+
+    option value="Black" Black
+
+    option value="White" White
+
+    option value="Natural" Red
+    
+  h6 Furniture Type
+  select class="type fancy"  style="width: 300px"
+
+    option value="Dresser" Dresser
+
+    option value="Wardrobe" Wardrobe
+
+    option value="Desk" Desk
+
+    option value="Chair" Chair
+
+
+  .submit-button Submit

@@ -4,16 +4,31 @@ body {
   background-color: #444;
 }
 
-h1 h2 h3 h4 h5 {
+h1 h2 h3 h4 h5 h6 {
   font-family: 'Roboto', sans-serif;
 }
 
 h4 {
-  font-size: 26px;
+  font-size: 21px;
   color: #fff;
   font-weight: 300;
   margin-bottom: 20px;
 
+}
+
+h5 {
+  font-size: 18px;
+  color: #444;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+h6 {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 8px;
+  margin-top: 6px;
 }
 
 .top-strip {
@@ -21,7 +36,6 @@ h4 {
   z-index: 9;
   position: fixed;
   width: 100%;
-  margin-top: -70px;
 }
 
 
@@ -37,7 +51,21 @@ h4 {
   box-shadow: 0px 4px 7px 0px #222;
   z-index: 12;
   margin-left: 74px;
-  margin-top: -70px;
+  margin-top: 0;
+}
+
+.browse-area-two {
+  width: 300px;
+  border-radius: 4px;
+  padding: 30px;
+  display: block;
+  background-color: #333;
+  box-shadow: 0px 4px 7px 0px #222;
+  z-index: 22;
+  margin-left: 64px;
+  position: relative;
+  margin-top: -403px;
+
 }
 
 
@@ -50,7 +78,8 @@ h4 {
   border-top-right-radius: 0;
   position: fixed;
   box-shadow: 0px 3px 5px 0px #222;
-  margin-top: -70px;
+  margin-top: -8px;
+  display: none;
   z-index: 10;
 }
 
@@ -73,6 +102,24 @@ h4 {
 
 }
 .close i{
+  font-size: 14px;
+  color: #999;
+  display: block;
+  text-align: center;
+  margin-top: 4px;
+}
+
+.close-two {
+  width: 24px;
+  height: 24px;
+  border-radius: 99px;
+  border: #999 solid 2px;
+  margin-top: -53px;
+  float: right;
+  cursor: pointer;
+
+}
+.close-two i{
   font-size: 14px;
   color: #999;
   display: block;
@@ -107,6 +154,17 @@ h4 {
   
 }
 
+.spinner {
+  background-image: image_url('377.gif');
+  background-repeat: no-repeat;
+  height: 100px;
+  display: none;
+  background-size: 10%;
+  background-position: center;
+
+}
+
+
 
 /*header information*/
 
@@ -124,7 +182,7 @@ h4 {
   margin: 0;
 /*  background-color: none;
 */
-  padding-top: 50px;
+  // padding-top: 50px;
   padding-bottom: 30px;
   
 }
@@ -133,11 +191,11 @@ h4 {
   width: 940px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .seven-oaks-logo {
-  font-size: 72px;
+  font-size: 60px;
   color:  #C5FABC;
   text-align: center;
   font-family: 'Lily Script One', cursive;
@@ -145,8 +203,8 @@ h4 {
 }
 
 .introduction {
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 18px;
+  line-height: 30px;
   color: #507b97;
   text-align: center;
   font-family: 'Roboto', sans-serif;
@@ -162,7 +220,6 @@ h4 {
   height:450px;
   width:940px;
   margin:0 auto;
-  background-image: image_url('img6o.jpg');
 }
 
 
@@ -205,8 +262,8 @@ h4 {
   padding-bottom: 20px;
   text-align: left;
 
-  max-height: 310px;
-  min-height: 310px;
+  /* max-height: 310px;
+  min-height: 310px; */
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -266,6 +323,8 @@ hr {
   padding-left: 20px;
   padding-right: 20px;
   position: relative;
+
+
 }
 
 .purchase {
@@ -284,6 +343,11 @@ hr {
   margin-bottom: 20px;
 }
 
+.purchase a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .booth {
   width: 593px;
   float: right;
@@ -296,14 +360,20 @@ hr {
   font-weight: 300;
   text-align: left;
   line-height: 25px;
+  font-size: 14px;
   color: #666;
   position: absolute;
   bottom: 0;
   margin-bottom: 110px;
+  padding-right: 20px;
+  height: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .middle-content p {
   font-weight: 700;
+  font-size: 15px;
   position: absolute;
   bottom: 0;
   margin-bottom: 80px

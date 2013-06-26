@@ -4,6 +4,9 @@
 
 BigItemView = Backbone.View.extend({  
 
+  /*events: {
+    'click .thumbs': 'thumbs',
+  },*/
 
   initialize: function(){
 
@@ -16,7 +19,7 @@ BigItemView = Backbone.View.extend({
   render: function(){
 
     /*bigItemViewTemplate is inserted into the the empty div .middle-wrap*/
-    this.$el.html(bigItemViewTemplate());
+    this.$el.html(bigItemViewTemplate(this.model));
 
     // removing contents of .middle-wrap
     $('.middle-wrap').html('');
@@ -26,6 +29,17 @@ BigItemView = Backbone.View.extend({
 
 
   }
+
+  /*thumbs: function(){
+
+    $('.booth').html('')
+
+    $('.booth')append(this.$el);
+
+
+*/
+
+
 
   
 });

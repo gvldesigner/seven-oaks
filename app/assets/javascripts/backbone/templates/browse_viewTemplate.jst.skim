@@ -4,54 +4,34 @@ h4 Browse our selection:
 .close
   i.ss-icon delete
 
-select class="vintage fancy" data-placeholder="Vintage" style="width: 300px"
+h6 Wood Type
+select class="wood fancy" style="width: 300px"
 
-  option value="" Vintage
+  option value="Walnut" Mahogany
 
-  option value="1920s" 1920s
+  option value="Birch" Maple
 
-  option value="1930s" 1930s
+  option value="Teak" Teak
 
-  option value="1940s" 1940s
+  option value="Maple" Birch
 
-  option value="1950s" 1940s
+  option value="Oak" Walnut
 
-  option value="1960s" 1940s
   
-
-select class="wood fancy" data-placeholder="Wood Type" style="width: 300px"
-
-  option value="" Wood Type
-
-  option value="Walnut fancy" Walnut
-
-  option value="Birch fancy" Birch
-
-  option value="Maghony fancy" Maghony
-
-  option value="Teak fancy" Teak
-
-  option value="Maple fancy" Maple
-
-  option value="Oak fancy" Oak
-  
-
-select class="color fancy" data-placeholder="Color" style="width: 300px"
+h6 Color
+select class="color fancy" style="width: 300px"
     
-  option value="" Color
-
-  option value="Red" Red
+  option value="Red" Natural
 
   option value="Black" Black
 
   option value="White" White
 
-  option value="Natural" Natural
+  option value="Natural" Red
   
-
-select class="type fancy" data-placeholder="Furniture Type" style="width: 300px"
-
-  option value="" Furniture Type
+  
+h6 Furniture Type
+select class="type fancy"  style="width: 300px"
 
   option value="Dresser" Dresser
 

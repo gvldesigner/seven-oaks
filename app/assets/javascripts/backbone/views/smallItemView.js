@@ -33,8 +33,9 @@ SmallItemView = Backbone.View.extend({
 
   bigItemView: function(){
 
-    // Initiated bigItemView
-    new BigItemView()
+    // Initiated bigItemView the model is 
+    // what was clicked ie the single item
+    new BigItemView({model: this.model})
     
   }
 
