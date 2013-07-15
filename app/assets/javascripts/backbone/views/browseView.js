@@ -67,7 +67,7 @@ BrowseView = Backbone.View.extend({
       error: function() {
         console.log ('sentence')
 
-            $('.middle-wrap').html('<h5>Your currently selection rendered no items, please try again!</h5>');
+            $('.middle-wrap').html('<h5>Your current selection rendered no items, please try again!</h5>');
         }
     });
 
