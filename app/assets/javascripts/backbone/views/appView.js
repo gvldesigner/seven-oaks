@@ -49,7 +49,8 @@ AppView = Backbone.View.extend({
 
   render: function(){
     // on rendering the page the main photo div is shown, the view will always remember (this.el)
-    $('.main-photo').html(this.el);
+    $('.main-photo-content').html(this.el);
+    $('.main-photo').show();
 
     mainFurnitureView.render();
 

@@ -12,8 +12,8 @@ FurnitureMainView = Backbone.View.extend({
     /*Rendering JST = javascript template*/
     this.$el.html(JST['backbone/templates/main_viewTemplate']());
 
-    // within this .main-photo empty div
-    $('.main-photo').html(this.el);
+    // within this .main-photo-content empty div
+    $('.main-photo-content').html(this.el);
 
     $('.browse-area-two').show();
 
@@ -26,10 +26,9 @@ FurnitureMainView = Backbone.View.extend({
   submit: function(){
 
 
-    // once the submit button is clicked the .main-photo div is removed
-    $('.main-photo').remove()
-
-    console.log('this is where the spinner should show')
+    // once the submit button is clicked the .main-photo-content div is removed
+    $('.main-photo').hide()
+    $('.main-photo-content').remove()
 
     $('.spinner').show();
 
